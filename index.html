@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fontex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-clifford: #003399;
+    }
+    @theme {
+      --font-display: "Inter", "sans-serif";
+    }
+  </style>
+</head>
+
+<body class="font-Intel">
+  <div class="mt-1 container mx-auto lg:pr-20 lg:pl-20 pl-2 pr-2 flex items-center justify-between">
+    <a class="lg:w-80 md:w-60 w-36" href="/">
+      <img src="/images/logo.svg" alt="logo">
+    </a>
+    <ul
+      class="flex items-center *:p-1 gap-8 max-sm:hidden *:font-medium *:text-sm *:duration-300 *:hover:text-black *:text-[#777777]  lg:*:text-lg">
+      <li><a class="" href="/">About</a></li>
+      <li><a class="" href="/">Products</a></li>
+      <li><a class="" href="/">Services</a></li>
+      <li><a class="" href="/">Contact us</a></li>
+    </ul>
+    <div class="flex gap-4">
+      <a href="/"
+        class="duration-300 bg-clifford py-1 px-5 lg:py-[10px] lg:px-[30px] md:py-[8px] md:px-[20px] rounded-lg text-white border border-clifford hover:bg-transparent hover:text-clifford md:text-xl">
+        Login
+      </a>
+      <div class="cursor-pointer sm:hidden text-preliminary pr-2 text-3xl">
+        <i class="fa-solid fa-bars fa-flip"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ! carusel -->
+   <div class="relative">
+     <section class="carusel  flex  items-center justify-between overflow-hidden">
+       <div class="carousel-inner flex transition-all duration-700">
+         <div class="w-screen">
+           <img class="w-full h-full object-contain" src="/images/model3.png" alt="foto">
+         </div>
+         <div class="w-screen">
+           <img class="w-full h-full object-contain" src="/images/model2.png" alt="foto">
+         </div>
+         <div class="w-screen">
+           <img class="w-full h-full object-contain" src="/images/model.png" alt="foto">
+         </div>
+       </div>
+       <div>
+         <button class="next absolute top-1/2 -translate-y-1/2 p-2 right-3">
+           <i class=" fa-solid fa-chevron-right text-clifford md:text-[35px]"></i>
+         </button>
+         <button class="prev absolute top-1/2 -translate-y-1/2 left-3">
+           <i class="fa-solid fa-chevron-left text-clifford md:text-[35px]"></i>
+         </button>
+       </div>
+     </section>
+
+     <!-- ! lorem -->
+     <div class="flex flex-col mr-2 lg:gap-3 gap-1 items-start justify-center max-lg:bottom-[-10px] max-sm:left-[10px] backdrop-blur-sm bg-black/20 text-white lg:px-12 lg:py-8 sm:px-5 sm:py-5 px-3 py-1 sm:rounded-3xl rounded-md absolute bottom-10 left-10">
+       <p class="font-medium lg:text-2xl md:text-lg text-sm ">
+         Lorem ipsum dolor sit amet.
+       </p>
+       <p class="font-medium lg:text-xl sm:text-sm text-[10px] max-w-[400px] max-sm:hidden">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat.
+       </p>
+       <a href="/" class="duration-300 bg-clifford py-1 px-5 lg:py-[10px] lg:px-[30px] md:py-[8px] md:px-[20px] sm:rounded-lg rounded-md text-white border border-clifford hover:bg-transparent hover:text-clifford md:text-xl text-sm inline-block">
+         Go Shopping
+       </a>
+     </div>
+   </div>
+   <div class="bg-[url(/images/bgSale.png)] bg-cover w-full">
+    <div class="container mx-auto lg:pr-20 lg:pl-20 pl-2 pr-2 flex items-center justify-between">
+      <p class="">
+
+      </p>
+      <img src="/images/sale.png" alt="sale">
+    </div>
+   </div>
+
+
+  <!--
+    sm	640px	@media (min-width: 640px) { ... }
+    md	768px	@media (min-width: 768px) { ... }
+    lg	1024px	@media (min-width: 1024px) { ... }
+    xl	1280px	@media (min-width: 1280px) { ... }
+    2xl	1536px	@media (min-width: 1536px) { ... }
+  -->
+  <script src="/app.js"></script>
+
+</body>
+
+</html>
