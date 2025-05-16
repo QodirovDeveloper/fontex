@@ -30,3 +30,26 @@ prev.addEventListener("click", () => {
 const animate1 = () => {
   carousel.style.transform = `translateX(-${(100 / max) * activeIndex}%)`;
 };
+
+// !=================
+let remainingTime = 1 * 1 * 20;
+
+function updateTimer() {
+  const hours = String(Math.floor(remainingTime / 3600)).padStart(2, '0');
+
+  const minutes = String(Math.floor((remainingTime % 3600) / 60)).padStart(2, '0');
+
+  const seconds = String(remainingTime % 60).padStart(2, '0');
+
+  document.getElementById('countdown').textContent = `${hours}:${minutes}:${seconds}`;
+
+  if (remainingTime > 0) {
+    remainingTime--;
+  } else {
+    clearInterval(timerInterval);
+    document.getElementById('countdown').textContent = "Taymer tugadi!";
+  }
+}
+
+updateTimer(); // Boshlanish holatini ko‘rsatish
+const timerInterval = setInterval(updateTimer, 1000);
