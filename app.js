@@ -120,11 +120,11 @@ function Print(users) {
           <img class="mx-auto lg:max-w-[300px] md:max-w-[200px]" src="${user.image}" alt="${user.firstName}'s photo">
           <p class="sm:text-4xl text-base"><strong>${user.firstName} #${randomm}</strong></p>
           <p class="sm:text-2xl text-[12px]">${user.lastName}</p>
-          <a href="/"
+          <a href="#"
             class="duration-300 mt-4 bg-clifford px-[18px] py-[4px] sm:py-[6px] sm:px-[22px] sm:rounded-lg rounded-md text-white border border-clifford hover:bg-transparent hover:text-clifford md:text-xl text-[12px] inline-block">
           Buy
           </a>
-          <a href="/"
+          <a href="#"
             class="duration-300 mt-1 bg-white px-[18px] py-[4px] sm:py-[6px] sm:px-[22px] sm:rounded-lg rounded-md text-clifford border border-clifford hover:bg-clifford hover:text-white md:text-xl text-[12px] inline-block">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
