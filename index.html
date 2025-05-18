@@ -14,18 +14,24 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style type="text/tailwindcss">
-    @theme {
-      --color-clifford: #003399;
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#003399',
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+          }
+        }
+      }
     }
-    @theme {
-      --font-display: "Inter", "sans-serif";
-    }
-  </style>
+  </script>
 </head>
 
-<body class="font-Intel">
+<body class="font-inter">
   <div class="mt-1 container mx-auto lg:pr-20 lg:pl-20 pl-2 pr-2 flex items-center justify-between">
     <a class="lg:w-80 md:w-60 w-36" href="/">
       <img src="/images/logo.svg" alt="logo">
@@ -103,7 +109,7 @@
   </div>
 
   <!-- !  -->
-  
+
   <!--
     sm	640px	@media (min-width: 640px) { ... }
     md	768px	@media (min-width: 768px) { ... }
